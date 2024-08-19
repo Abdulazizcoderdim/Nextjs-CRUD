@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { Toaster } from 'sonner'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
         <div className="max-w-3xl mx-auto p-4">
           <Navbar />
           <div className="mt-8">{children}</div>
+          <Toaster position="top-center" />
         </div>
       </body>
     </html>
