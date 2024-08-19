@@ -10,6 +10,7 @@ const topicSchema = new Schema(
   }
 )
 
-const Topic = mongoose.model.Topic || mongoose.model('Topic', topicSchema)
+// Agar model allaqachon mavjud bo'lsa, uni qayta yaratmaymiz.
+const Topic = mongoose.models.Topic || mongoose.model('Topic', topicSchema)
 
 export default Topic
