@@ -32,6 +32,7 @@ export default function AddTopic() {
         setTitle('')
         setDescription('')
         router.push('/')
+        router.refresh()
       } else {
         toast.error('Failed to add topic')
         console.log('Failed to add topic')
